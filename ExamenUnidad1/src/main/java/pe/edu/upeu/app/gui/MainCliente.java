@@ -40,7 +40,7 @@ public class MainCliente extends javax.swing.JPanel {
         List<ClienteTO> listarCleintes = cDao.listarClientes();
         jTable1.setAutoCreateRowSorter(true);
         modelo = (DefaultTableModel) jTable1.getModel();
-        Object[] ob = new Object[4];
+        Object[] ob = new Object[6];
         for (int i = 0; i < listarCleintes.size(); i++) {
             ob[0] = i + 1;
             ob[1] = listarCleintes.get(i).getDniruc();
